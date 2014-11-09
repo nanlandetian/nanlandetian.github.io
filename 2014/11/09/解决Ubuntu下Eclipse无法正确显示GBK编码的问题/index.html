@@ -3,8 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档 | bluesky</title>
+  <title>bluesky</title>
   <meta name="author" content="Yang li">
+  
+  <meta name="description" content="title: 解决Ubuntu下Eclipse无法正确显示GBK编码的问题date: 2014-11-09 15:31:18categories:
+
+杂记tags:－编程
+
+
+解决Ubuntu下Eclipse无法正确显示GBK编码的问题
+Ubuntu系统默认编码是utf-8，默认eclipse找不到GBK的编码。一般win下编程默认的编码方式都是GBK,最近用ubuntu做开发,遇到这个问题。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -198,37 +206,85 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">归档</h2>
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-11-09T07:36:30.000Z"><a href="/2014/11/09/解决Ubuntu下Eclipse无法正确显示GBK编码的问题/">11月 9 2014</a></time>
+      
+      
+  
+    <h1 class="title"></h1>
+  
 
+    </header>
+    <div class="entry">
+      
+        <p>title: 解决Ubuntu下Eclipse无法正确显示GBK编码的问题<br>date: 2014-11-09 15:31:18<br>categories:</p>
+<ul>
+<li>杂记<br>tags:<br>－编程</li>
+</ul>
+<hr>
+<h1 id="解决Ubuntu下Eclipse无法正确显示GBK编码的问题">解决Ubuntu下Eclipse无法正确显示GBK编码的问题</h1>
+<p>Ubuntu系统默认编码是utf-8，默认eclipse找不到GBK的编码。一般win下编程默认的编码方式都是GBK,最近用ubuntu做开发,遇到这个问题。<br><a id="more"></a><br>解决方法：  </p>
+<ol>
+<li><p>打开终端，输入:</p>
+<p> sudo gedit /var/lib/locales/supported.d/local<br> 添加两行：<br> zh_CN.GBK GBK<br> zh_CN.GB2312 GB2312<br> 保存，退出。        </p>
+</li>
+</ol>
+<p>2.</p>
+<pre><code><span class="built_in">sudo</span> dpkg-reconfigure –force locales  
+</code></pre><p> 然后，打开Eclipse，依次找到：Windows-&gt;Preference-&gt;General-&gt;Workspace，在Text file encoding中选择GBK（没有的话可以强制输入GBK），那么GBK的中文就正常显示了。 </p>
+<p><em>Markdown:插入整段代码缩进4个空格或者tab</em></p>
 
-  <div class="archive">
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2014-11-09T07:36:30.000Z"><a href="/2014/11/09/解决Ubuntu下Eclipse无法正确显示GBK编码的问题/">11月 9 2014</a></time>
-            
-              <h1 class="title"><a href="/2014/11/09/解决Ubuntu下Eclipse无法正确显示GBK编码的问题/"></a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2014-11-06T11:21:23.000Z"><a href="/2014/11/06/快速学习一门语言的方法/">11月 6 2014</a></time>
-            
-              <h1 class="title"><a href="/2014/11/06/快速学习一门语言的方法/">快速学习一门语言的方法</a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
+      
+    </div>
+    <footer>
+      
+        
+        
+		<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+      
+      <div class="clearfix"></div>
+    </footer>
   </div>
+</article>
+
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2014/11/06/快速学习一门语言的方法/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+<section id="comment">
+ 
+ <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="快速学习一门语言的方法" data-url="http://orianna14.com/2014/11/06/快速学习一门语言的方法/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yangl"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+</section>
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
