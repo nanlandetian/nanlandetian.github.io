@@ -218,12 +218,8 @@
       
         <p>Ubuntu系统默认编码是utf-8，默认eclipse找不到GBK的编码。一般win下编程默认的编码方式都是GBK,最近用ubuntu做开发,遇到这个问题。<br><a id="more"></a><br>解决方法：  </p>
 <ol>
-<li><p>打开终端，输入:<br>`</p>
-<p> sudo gedit /var/lib/locales/supported.d/local         </p>
-<p> 添加两行：</p>
-<p> zh_CN.GBK GBK</p>
-<p> zh_CN.GB2312 GB2312</p>
-<p> 保存，退出。<br>`       </p>
+<li><p>打开终端，输入:  </p>
+<p> sudo gedit /var/lib/locales/supported.d/local<br> 添加两行:<br> zh_CN.GBK GBK<br> zh_CN.GB2312 GB2312<br> 保存，退出。   </p>
 </li>
 </ol>
 <p>2.</p>
