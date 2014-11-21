@@ -12,8 +12,8 @@ hash
 计数
 
 
-这是小骆驼书第六章的第二道练习题，非常经典，故记录于此：
-问题：有一列单词，每行仅一个词，这些词中有一些是重复出现的，写一个程序统计每">
+这是小骆驼书第六章的第二道练习题，觉得非常经典，故记录于此：
+问题：有一列单词，每行仅一个词，这些词中有一些是重复出现的，写一个程序统">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -213,7 +213,7 @@ hash
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-11-21T07:54:32.000Z"><a href="/2014/11/21/perl应用－hash计数/">11月 21 2014</a></time>
+        <time datetime="2014-11-21T08:08:05.000Z"><a href="/2014/11/21/perl应用－hash计数/">11月 21 2014</a></time>
       
       
   
@@ -229,7 +229,7 @@ hash
 <li>计数</li>
 </ul>
 <hr>
-<p>这是小骆驼书第六章的第二道练习题，非常经典，故记录于此：</p>
+<p>这是小骆驼书第六章的第二道练习题，觉得非常经典，故记录于此：</p>
 <p><strong>问题</strong>：有一列单词，每行仅一个词，这些词中有一些是重复出现的，写一个程序统计每个单词出现的次数。    </p>
 <figure class="highlight perl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/perl</span></div><div class="line"><span class="keyword">use</span> strict;</div><div class="line"><span class="keyword">use</span> warnings;</div><div class="line"><span class="keyword">open</span> (INPUT,<span class="string">"&lt;input.txt"</span>);</div><div class="line"><span class="keyword">open</span> (OUTPUT,<span class="string">"&gt;out.txt"</span>);</div><div class="line"><span class="keyword">my</span> (<span class="variable">%count</span>,<span class="variable">$word</span>);</div><div class="line"><span class="keyword">foreach</span>(&lt;INPUT&gt;){</div><div class="line">    <span class="keyword">chomp</span>;</div><div class="line">    <span class="variable">$count</span>{<span class="variable">$_</span>}++;</div><div class="line">}</div><div class="line"><span class="keyword">foreach</span> <span class="variable">$word</span>(<span class="keyword">keys</span> <span class="variable">%count</span>){</div><div class="line">    <span class="keyword">print</span> OUTPUT <span class="string">"<span class="variable">$word</span> was seen <span class="variable">$count</span>{<span class="variable">$word</span>} times.\n"</span>;</div><div class="line">}</div><div class="line"><span class="keyword">close</span> INPUT;</div><div class="line"><span class="keyword">close</span> OUTPUT;</div></pre></td></tr></table></figure>
 
