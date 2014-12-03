@@ -3,15 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <title>解决Ubuntu下Eclipse无法正确显示GBK编码的问题 | Bluesky&#39;s blog</title>
+  <title>看雪论坛 | Bluesky&#39;s blog</title>
   <meta name="author" content="Yang li">
-  
-  <meta name="description" content="Ubuntu系统默认编码是utf-8，默认eclipse找不到GBK的编码。一般win下编程默认的编码方式都是GBK,最近用ubuntu做开发,遇到这个问题。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="解决Ubuntu下Eclipse无法正确显示GBK编码的问题"/>
+  
   <meta property="og:site_name" content="Bluesky&#39;s blog"/>
 
   
@@ -200,79 +198,25 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-11-09T07:31:18.000Z"><a href="/2014/11/09/解决Ubuntu下Eclipse无法正确显示GBK编码的问题/">11月 9 2014</a></time>
-      
-      
-  
-    <h1 class="title">解决Ubuntu下Eclipse无法正确显示GBK编码的问题</h1>
-  
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title tag">看雪论坛</h2>
 
-    </header>
-    <div class="entry">
-      
-        <p>Ubuntu系统默认编码是utf-8，默认eclipse找不到GBK的编码。一般win下编程默认的编码方式都是GBK,最近用ubuntu做开发,遇到这个问题。<br><a id="more"></a><br>解决方法：  </p>
-<ol>
-<li>打开终端，输入:  </li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo gedit /<span class="built_in">var</span>/lib/locales/supported<span class="built_in">.</span>d/<span class="built_in">local</span></div><div class="line">添加两行:</div><div class="line">zh_CN<span class="built_in">.</span>GBK GBK</div><div class="line">zh_CN<span class="built_in">.</span>GB2312 GB2312</div><div class="line">保存，退出。</div></pre></td></tr></table></figure>
 
-<p>2.</p>
-<pre><code><span class="built_in">sudo</span> dpkg-reconfigure –force locales  
-</code></pre><p> 然后，打开Eclipse，依次找到：Windows-&gt;Preference-&gt;General-&gt;Workspace，在Text file encoding中选择GBK（没有的话可以强制输入GBK），那么GBK的中文就正常显示了。</p>
-<p><em>Markdown:插入整段代码缩进4个空格或者tab</em></p>
-
-      
-    </div>
-    <footer>
-      
-        
-  
-  <div class="categories">
-    <a href="/categories/杂记/">杂记</a>
+  <div class="archive">
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-12-03T07:29:48.000Z"><a href="/2014/12/03/看雪论坛-（论坛规则小测验）答案/">12月 3 2014</a></time>
+            
+              <h1 class="title"><a href="/2014/12/03/看雪论坛-（论坛规则小测验）答案/">看雪论坛 （论坛规则小测验）答案</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
   </div>
-
-        
-  
-  <div class="tags">
-    <a href="/tags/编程/">编程</a>
-  </div>
-
-		<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-<section id="comment">
- 
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="2014/11/09/解决Ubuntu下Eclipse无法正确显示GBK编码的问题/" data-title="解决Ubuntu下Eclipse无法正确显示GBK编码的问题" data-url="http://yangli.xyz/2014/11/09/解决Ubuntu下Eclipse无法正确显示GBK编码的问题/"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"yangl"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-
-</section>
-
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
